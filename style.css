@@ -1,0 +1,38 @@
+body,
+button {
+ font-family: Arial,Helvetica,sans-serif;
+ font-size: 30px;
+}
+
+button {
+    border-style: solid;
+    border: none;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+}
+
+.calculator {
+    height: 20em;
+    width: 15em;
+}
+
+.display {
+    height: 30%;
+    background-color: rgb(62, 68, 68);
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3px;
+    min-height: 70%;
+}
+
+.clear {
+    grid-column: span 4;
+}
