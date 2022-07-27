@@ -22,8 +22,15 @@ button {
 }
 
 .display {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     height: 30%;
     background-color: rgb(62, 68, 68);
+}
+
+#display-text {
+    margin: 10px;
 }
 
 .buttons-grid {

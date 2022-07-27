@@ -1,3 +1,18 @@
+const displayValue = document.querySelector('.display');
+const displayText = document.querySelector('#display-text');
+const buttons = document.querySelectorAll('button');
+
+
+
+buttons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+        displayText.style.color = 'white';
+        displayText.textContent += event.target.textContent;
+    });
+  });
+
+
+
 const add = function(a,b){
     return a + b;
 }
@@ -15,7 +30,7 @@ const divide = function(a,b){
 }
 
 
-const operate = function(operator,a,b){
+const operate = function(operator,a,b){ 
     if(operator === '+'){
         let result = add(a,b);
             return result;
