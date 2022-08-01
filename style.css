@@ -4,11 +4,6 @@ button {
  font-size: 30px;
 }
 
-button {
-    border-style: solid;
-    border: none;
-}
-
 .main {
     display: flex;
     justify-content: center;
@@ -29,10 +24,6 @@ button {
     background-color: rgb(62, 68, 68);
 }
 
-#display-text {
-    margin: 10px;
-}
-
 .buttons-grid {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -40,6 +31,22 @@ button {
     min-height: 70%;
 }
 
-.clear {
+#display-text {
+    margin: 10px;
+}
+
+
+#clear {
     grid-column: span 4;
 }
+
+button {
+    border-style: solid;
+    border: none;
+}
+
+button:active {
+    background-color: rgb(184, 183, 183);
+}
+
+
