@@ -48,5 +48,11 @@ button {
 button:active {
     background-color: rgb(184, 183, 183);
 }
+button:disabled {
+
+  background-color: #efefef;
+  color: black;
+}
+
 
 
